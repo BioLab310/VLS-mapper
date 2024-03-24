@@ -11,6 +11,8 @@ int main(int argc,char *argv[]) {
     string readPath="pb_human.fasta";
     string refPath="05_hg38.fa";
     string outPath="test.sam";
+    string mapRate = "0.3";
+    string chainMethod = "AnchorDegree";
     for(int32_t i=1;i<argc;i=i+2) {
         if (argv[i][0] == '-' && argv[i][1] == 'i') {
             readPath = argv[i + 1];
@@ -20,6 +22,12 @@ int main(int argc,char *argv[]) {
         }
         if (argv[i][0] == '-' && argv[i][1] == 'o') {
             outPath = argv[i + 1];
+        }
+        if (argv[i][0] == '-' && argv[i][1] == 'm') {
+            mapRate = argv[i + 1];
+        }
+        if (argv[i][0] == '-' && argv[i][1] == 'c') {
+            chainMethod = argv[i + 1];
         }
     }
 

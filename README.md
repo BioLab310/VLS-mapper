@@ -41,11 +41,15 @@ The format of a parameter of VLS-mapper in the command line is a pair of strings
 
 @parameter (-i,<read_path>)
 
-  Parameter 'i' gives the path of a text file which saves the filenames of the read dataset files. For example 'ref_path'="dataset1", than dataset1 is a text file which saves the filename "read.fa".
+  Parameter 'i' gives the path of a text file which saves the filenames of the read dataset files. For example 'read_path'="dataset1", than dataset1 is a text file which saves the filename "read.fa".
 
 @parameter (-I,<ref_path>)
 
   Parameter 'I' gives the path of a text file which saves the filenames of the reference genome files. For example 'ref_path'="dataset2", than dataset2 is a text file which saves the filename "reference.fa".
+
+@parameter (-o,<result_path>)
+
+  Parameter 'o' gives the path of a text file which saves the filenames of the mapping result files. For example 'result_path'="result", than result is a text file which saves the filename "map_res.sam".
 
 @parameter (-m,[mapping_rate])
 
